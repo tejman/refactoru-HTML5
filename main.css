@@ -1,2 +1,69 @@
 /* ADD YOUR STYLES HERE */
+*, *.after, *.before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+#main-container {
+  max-width: 850px;
+  float: left;
+  margin: auto;
+  position: relative;
+}
+
+#sidebar {
+  max-width: 30%;
+  min-width: 320px;
+  float: left;
+  border: 1px solid black;
+  margin: 0;
+}
+
+#quick-links {
+  float: right;
+  clear: right;
+  max-width: 40%;
+  border: 1px solid black;
+}
+
+.gallery {
+  text-align: center;
+}
+.gallery div{
+  display: inline-block;
+  width: 24%;
+}
+
+@media screen and (max-width: 850px) {
+  #main-container {
+    padding: 15px;
+  }
+
+  #quick-links {
+    float: none;
+    min-width: 250px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  #sidebar div{
+    display: inline-block;
+    margin: 3px;
+  }
+  #sidebar {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .gallery div{
+    width: 49%;
+  }
+}

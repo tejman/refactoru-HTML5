@@ -3,11 +3,123 @@
   <head>
     <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSS Modularity</title>
+    <title>Responsive Design</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <aside id="sidebar">
+      <div><a href="#">Nav Link 1</a></div>
+      <div><a href="#">Nav Link 2</a></div>
+      <div><a href="#">Nav Link 3</a></div>
+      <div><a href="#">Nav Link 4</a></div>
+    </aside>
+
+    <div id="main-container">
+
+      <span><h1>Responsive Web Design</h1></span>
+
+      <div id="quick-links">
+        <h1>Cascading Style Sheets</h1>
+        <ul>
+          <li>
+            <a href="'#">Comparison of layout engines</a>
+          </li>
+          <li>
+            <a href="'#">Comparison of stylesheet languages</a>
+          </li>
+          <li>
+            <a href="'#">CSS Zen Garden</a>
+          </li>
+          <li>
+            <a href="'#">CSSTidy</a>
+          </li>
+          <li>
+            <a href="'#">Style sheet</a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        Responsive Web design (RWD) is a Web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).[1][2][3]
+        A site designed with RWD[1][4] adapts the layout to the viewing environment by using fluid, proportion-based grids,[5] flexible images,[6][7][8][9] and CSS3 media queries,[3][10][11] an extension of the @media rule.
+      </p>
+      <ul>
+        <li>
+          The fluid grid concept calls for page element sizing to be in relative units like percentages, rather than absolute units like pixels or points.
+        </li>
+        <li>
+          Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing element
+        </li>
+        <li>
+          Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.
+        </li>
+        <li>
+          Server-side components (RESS) in conjunction with client-side ones such as media queries can produce faster-loading sites for access over cellular networks and also deliver richer functionality/usability avoiding some of the pitfalls of device-side-only solutions.
+        </li>
+      </ul>
+
+
+
+      <span><img src="http://placehold.it/550x150" alt=""></span>
+      
+      <div id="toc">
+        <h3>Contents</h3>
+        <ol>
+          <li>
+            <a href="#">Related Concepts</a>
+            <li>
+              <a href="#">Audience and Device Aware (ADA)</a>
+            </li>
+            <li>
+              <a href="#">Mobile First</a>
+            </li>
+          </li>
+          <li>
+            <a href="#">Challenges and other approaches</a>
+          </li>
+          <li>
+            <a href="#">History</a>
+          </li>
+          <li>
+            <a href="#">See Also</a>
+          </li>
+          <li>
+            <a href="#">References</a>
+          </li>
+        </ol>
+      </div>
+
+      <span><h1>Related Concepts</h1></span>
+      <h2>Audience and Device Aware</h2>
+      <p>
+        Audience and Device Aware is an approach aimed at ensuring that a site is optimised to deliver what a user wants and that works effectively on the device being used to access the site. Unlike Responsive web design (RWD), which crafts a site visually for a range of devices, ADA aims to reflect the many different elements that enhance and impact on the performance and usability of a site. The predominant application for the ADA approach is for mobile and smaller screen devices. The principle truly sees the adoption of a “mobile first” strategy and focuses on the performance of a site and value that it delivers to a user and the business.
+      </p>
+      <h2>Mobile First, unobtrusive Javascript, and progressive enhancement</h2>
+      <p>
+        "Mobile first", unobtrusive JavaScript, and progressive enhancement (strategies for when a new site design is being considered) are related concepts that predated RWD: browsers of basic mobile phones do not understand JavaScript or media queries, so the recommended practice is to create a basic web site, and enhance it for smart phones and PCs—rather than try graceful degradation to make a complex, image-heavy site work on the most basic mobile phones.
+      </p>
+      <h2>Progressive enhancement based on browser</h2>
+      <p>
+        Where a web site must support basic mobile devices that lack JavaScript, browser ("user agent") detection (also called "browser sniffing"), and mobile device detection[16][19] are two ways of deducing if certain HTML and CSS features are supported (as a basis for progressive enhancement)—however, these methods are not completely reliable unless used in conjunction with a device capabilities database.
+        For more capable mobile phones and PCs, JavaScript frameworks like Modernizr, jQuery, and jQuery Mobile that can directly test browser support for HTML/CSS features (or identify the device or user agent) are popular. Polyfills can be used to add support for features—e.g. to support media queries (required for RWD), and enhance HTML5 support, on Internet Explorer. Feature detection also might not be completely reliable: some may report that a feature is available, when it is either missing or so poorly implemented that it is effectively nonfunctional.
+      </p>
+
+      <span><img src="http://placehold.it/350x150" alt=""></span>
+
+      <span><h1>Challenges and other approaches</h1></span>
+      <p>
+        Luke Wroblewski has summarized some of the RWD and mobile design challenges, and created a catalog of multi-device layout patterns.[22][23][24] He suggests that, compared with a simple RWD approach, device experience or RESS (responsive web design with server-side components) approaches can provide a user experience that is better optimized for mobile devices.[25][26][27] Server-side "dynamic CSS" implementation of stylesheet languages like Sass or Incentivated's MML can be part of such an approach by accessing a server based API which handles the device (typically mobile handset) differences in conjunction with a device capabilities database in order to improve usability.[28] RESS is more expensive to develop, requiring more than just client-side logic, and so tends to be reserved for organisations with larger budgets.
+        One problem for RWD is that banner advertisements and videos are not fluid.[29] However search advertising and (banner) display advertising support specific device platform targeting and different advertisement size formats for desktop, smartphone, and basic mobile devices. Different landing page URLs can be used for different platforms,[30] or Ajax can be used to display different advertisement variants on a page.[19][23][31]
+        There are now many ways of validating and testing RWD designs,[32] ranging from mobile site validators and mobile emulators[33] to simultaneous testing tools like Adobe Edge Inspect.[34] The Firefox browser and the Chrome console offer responsive design viewport resizing tools, as do third parties.
+      </p>
+      
+      <div class="gallery">
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+        <div><img src="http://placehold.it/100x100" alt=""></div>
+      </div>
+    </div>
 
   </body>
 </html>
